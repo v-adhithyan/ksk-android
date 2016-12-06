@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "351118157873",
+    "firebase_url": "https://kandha-sasti-kavasam.firebaseio.com",
+    "project_id": "kandha-sasti-kavasam",
+    "storage_bucket": "kandha-sasti-kavasam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351118157873:android:30c5b87f01d1a693",
+        "android_client_info": {
+          "package_name": "ceg.avtechlabs.kandhasastikavasam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351118157873-a25dqurfgj6069qqsfdpjl05s11f6i36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeZ0VDJcLPrbv9JjJ2TOiXZIP_9w_i0xc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
