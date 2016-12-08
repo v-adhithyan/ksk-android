@@ -25,6 +25,17 @@
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
     </activity>
+    <activity android:name=".activities.MainActivity">
+    </activity>
+    <activity android:name=".activities.LyricsActivity">
+    </activity>
+    <activity android:name=".activities.ViewLyricsActivity">
+    </activity>
+    <activity
+        android:name=".activities.SongPlayerActivity"
+        android:label="@string/title_activity_song_player"
+        android:theme="@style/AppTheme.NoActionBar">
+    </activity>
   </application>
 
 </manifest>
