@@ -1,50 +1,46 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.2"
-    defaultConfig {
-        applicationId "ceg.avtechlabs.kandhasastikavasam"
-        minSdkVersion 16
-        targetSdkVersion 24
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        multiDexEnabled true
+  compileSdkVersion 24
+  buildToolsVersion "24.0.2"
+  defaultConfig {
+    applicationId "ceg.avtechlabs.kandhasastikavasam"
+    minSdkVersion 16
+    targetSdkVersion 24
+    versionCode 1
+    versionName "1.0"
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    multiDexEnabled true
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
+  }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+  compile fileTree(dir: 'libs', include: ['*.jar'])
+  androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    exclude group: 'com.android.support', module: 'support-annotations'
+  })
 
-    // Google design libraries
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.android.support:appcompat-v7:24.+'
-    compile 'com.android.support:design:24.+'
+  // Google design Libraries
+  compile 'com.android.support:appcompat-v7:24.2.1'
+  compile 'com.android.support:design:24.2.1'
+  compile 'com.android.support:support-v4:24.2.1'
+  
+  // Google Support Libraries
+  compile 'com.google.android.gms:play-services-ads:9.4.0'
+  compile 'com.google.android.gms:play-services:9.4.0'
 
-    // Google support libraries
-    compile 'com.google.android.gms:play-services-ads:9.0.1'
-    compile "com.google.android.gms:play-services:9.0.1"
+  // Firebase for analytics & notification
+  compile 'com.google.firebase:firebase-core:9.4.0'
+  compile 'com.google.firebase:firebase-messaging:9.4.0'
 
-    // Firebase for analytics & notification
-    compile 'com.google.firebase:firebase-core:9.0.1'
-    compile 'com.google.firebase:firebase-messaging:9.0.1'
-
-    // Other 3rd party libraries
-    // Custom Seekbar
-    compile 'com.github.Triggertrap:SeekArc:v1.1'
-
-    // Material Dialogs
-    compile 'com.afollestad.material-dialogs:core:0.9.1.0'
+  // Other 3rd party libraries
+  compile 'com.github.Triggertrap:SeekArc:v1.1'
 
   testCompile 'junit:junit:4.12'
 }

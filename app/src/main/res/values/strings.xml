@@ -18,7 +18,7 @@
   <string name="rate_app_message">Do you like the application ? Please spare a moment to rate and review the app.</string>
   <string name="rate_app_ok">Rate Now</string>
   <string name="rate_app_cancel">Rate Later</string>
-  <string name="rate_app_uri">market://details?id=ceg.avtechlabs.sbm</string>
+  <string name="rate_app_uri">market://details?id=ceg.avtechlabs.kandhasastikavasam</string>
   <string name="rate_app_error_playstore">Could not open PlayStore.Try after some time</string>
 
   <string name="yes">Yes</string>
@@ -43,7 +43,7 @@
 
   <!-- vl = view lyrics -->
   <string name="vl_english_title">English Lyrics</string>
-  <string name="vl_tamil_title">சுப்ரபாதம் தமிழ் வரிகள</string>
+  <string name="vl_tamil_title">தமிழ் வரிகள</string>
   <string name="vl_kannada_title">ಕನ್ನಡ ಭಾವಗಿತೆಗಳ ಸುಪ್ರಭಾತಮ</string>
   <string name="vl_telugu_title">సుప్రభాతం తెలుగు పాట సాహిత్యం</string>
 
@@ -58,6 +58,10 @@
   <string name="but_play_sbm">Play Kandha Sasti Kavasam</string>
 
   <!-- tv = text view -->
-  <string name="tv_song_duration">(20 minutes 32 seconds)</string>
+  <string name="tv_song_duration">(20 minutes 11 seconds)</string>
+
+  <string name="title_activity_splash_screen">SplashScreenActivity</string>
+  <string name="dummy_button">Dummy Button</string>
+  <string name="dummy_content">DUMMY\nCONTENT</string>
 
 </resources>
