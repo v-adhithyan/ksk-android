@@ -75,9 +75,8 @@ public class AudioService extends Service implements AudioManager.OnAudioFocusCh
   {
 
     //if(extra.equals("play")) {
-
-
-    ToastUtil.showToast(getApplicationContext(), "Suprabhatham is playing in background.");
+    String appName = getString(R.string.app_name);
+    ToastUtil.showToast(getApplicationContext(), appName + " is playing in background.");
     wifiLock = ((WifiManager) getSystemService(Context.WIFI_SERVICE)).createWifiLock(WifiManager.WIFI_MODE_FULL, "SuprabhathamLock");
     wifiLock.acquire();
     mediaplayer = MediaPlayer.create(this, R.raw.song);
@@ -102,7 +101,7 @@ public class AudioService extends Service implements AudioManager.OnAudioFocusCh
     wifiLock.release();
     NotificationManager nm = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
     nm.cancelAll();
-    ToastUtil.showToast(getApplicationContext(), "Suprabhatham playback is stopped.");
+    ToastUtil.showToast(getApplicationContext(), "Kandha Sasti Kavasam playback is stopped.");
   }
 
   public void pausePlayBack()

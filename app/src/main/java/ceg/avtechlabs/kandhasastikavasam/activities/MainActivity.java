@@ -14,6 +14,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,6 +24,7 @@ import android.widget.TimePicker;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.firebase.iid.FirebaseInstanceId;
 
 import java.util.LinkedList;
 
@@ -53,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-    getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.actionBarColor)));
+
     setTitle(R.string.app_name);
     AdView mAdView = (AdView) findViewById(R.id.adView);
     AdRequest adRequest = new AdRequest.Builder().build();
@@ -64,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
 
     /*//mixPanelUtil = MixPanelUtil.getInstance(this);
     //mixPanelUtil.trackEvent("Main Activity");*/
+    //String token = FirebaseInstanceId.getInstance().getToken();
+    //Log.d("sbm-log", "token:" + token);
   }
 
 
