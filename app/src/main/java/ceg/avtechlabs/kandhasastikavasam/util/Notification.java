@@ -29,7 +29,7 @@ public class Notification {
 
         int randomNumber = (int)Math.random();
 
-        builder.setSmallIcon(R.drawable.ic_launcher);
+        builder.setSmallIcon(R.drawable.ic_smail);
         builder.setContentTitle(title);
         builder.setContentText(message);
 
