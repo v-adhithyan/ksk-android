@@ -10,6 +10,7 @@ import android.os.Vibrator;
 
 import java.util.HashMap;
 
+import ceg.avtechlabs.kandhasastikavasam.R;
 import ceg.avtechlabs.kandhasastikavasam.activities.SplashScreenActivity;
 import ceg.avtechlabs.kandhasastikavasam.services.AudioService;
 
@@ -28,8 +29,8 @@ public class SongScheduler extends BroadcastReceiver {
         //check and set recurring alarm
         Alarm.checkAndSetRecurringAlarm(context);
 
-        String title = "Suprabhatham";
-        String message = "Suprabhatham is playing...";
+        String title = context.getString(R.string.app_name);
+        String message = title + " is playing ...";
 
         FileUtil.delete(context, FileUtil.HOUR_FILE);
         FileUtil.delete(context, FileUtil.MINUTE_FILE);
