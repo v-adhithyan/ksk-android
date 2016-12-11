@@ -58,7 +58,7 @@
   <string name="but_play_sbm">Play Kandha Sasti Kavasam</string>
 
   <!-- tv = text view -->
-  <string name="tv_song_duration">(20 minutes 11 seconds)</string>
+  <string name="tv_song_duration">(20 minutes 10 seconds)</string>
 
   <string name="title_activity_splash_screen">SplashScreenActivity</string>
   <string name="dummy_button">Dummy Button</string>

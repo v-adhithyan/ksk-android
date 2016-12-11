@@ -63,7 +63,6 @@ public class SongPlayerActivity extends AppCompatActivity {
 
     PlaybackUtil.init(this, seekArc);
     duration = PlaybackUtil.getDurationInSeconds();
-    ToastUtil.showToast(this, " " + duration);
     seekArc.setRoundedEdges(true);
 
     player = PlaybackUtil.getPlayer();
@@ -140,7 +139,7 @@ public class SongPlayerActivity extends AppCompatActivity {
         seekArc.setProgress(i);
         updateDuration(i);
 
-        if(i >= 1229){
+        if(i >= PlaybackUtil.getDurationInSeconds()){
           playBackButton.setImageResource(android.R.drawable.ic_media_play);
 
           t = null;
